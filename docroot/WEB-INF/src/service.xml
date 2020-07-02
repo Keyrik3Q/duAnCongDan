@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.congdan">
+	<author>ADMIN</author>
+	<namespace>QuanLyCongDan</namespace>
+
+	<entity local-service="true" name="CSMSCongDan" table="csmscongdan" data-source="qlcongdanDataSource" remote-service="true">
+		<column name="IdcsmsCongDan" db-name="idcsmscongdan" primary="true" type="long"></column>
+		<column name="Ho" db-name="ho" type="String"></column>
+		<column name="Dem" db-name="dem" type="String"></column>
+		<column name="Ten" db-name="ten" type="String"></column>
+		<column name="NgaySinh" db-name="ngaysinh" type="Date"></column>
+		<column name="GioiTinhId" db-name="gioitinhid" type="long"></column>
+		<column name="NoiSinhChiTiet" db-name="noisinhchitiet" type="String"></column>
+		<column name="NoiSinhXaId" db-name="noisinhxaid" type="long"></column>
+		<column name="NoiSinhHuyenId" db-name="noisinhhuyenid" type="long"></column>
+		<column name="NoiSinhTinhId" db-name="noisinhtinhid" type="long"></column>
+		<column name="DanTocId" db-name="dantocid" type="String"></column>
+		<column name="QuocTichId" db-name="quoctichid" type="String"></column>
+		<column name="TonGiaoId" db-name="tongiaoid" type="String"></column>
+		<column name="DiaChiThuongTru" db-name="diachithuongtru" type="String"></column>
+		<column name="DiaChiThuongTruXaId" db-name="diachithuongtruxaid" type="long"></column>
+		<column name="DiaChiThuongTruHuyenId" db-name="diachithuongtruhuyenid" type="long"></column>
+		<column name="DiaChiThuongTruTinhId" db-name="diachithuongtrutinhid" type="long"></column>
+		<column name="DiaChiHienNay" db-name="diachihiennay" type="String"></column>
+		<column name="DiaChiHienNayXaId" db-name="diachihiennayxaid" type="long"></column>
+		<column name="DiaChiHienNayHuyenId" db-name="diachihiennayhuyenid" type="long"></column>
+		<column name="DiaChiHienNayTinhId" db-name="diachihiennaytinhid" type="long"></column>
+		<column name="TinhTrang" db-name="tinhtrang" type="long"></column>
+		<column name="TinhtTranghonNhanId" db-name="tinhtranghonnhanid" type="long"></column>
+		<column name="socmnd" db-name="socmnd" type="String"></column>
+		<column name="NgayCapCMND" db-name="ngaycapcmnd" type="Date"></column>
+		<column name="NoiCapCMND" db-name="noicapcmnd" type="String"></column>
+		<column name="SoHoKhau" db-name="sohokhau" type="String"></column>
+		<column name="LaChuHo" db-name="lachuho" type="long"></column>
+		<column name="QuanHeChuHoId" db-name="quanhechuhoid" type="long"></column>
+		<column name="SoHoChieu" db-name="sohochieu" type="String"></column>
+		<column name="NgayCapSHC" db-name="ngaycapshc" type="Date"></column>
+		<column name="NgayHetHanSHC" db-name="ngayhethanshc" type="Date"></column>
+		<column name="NoiCapSHC" db-name="noicapshc" type="String"></column>
+		<column name="MaCongDan" db-name="macongdan" type="long"></column>
+		<column name="ImageData" db-name="imagedata" type="Blob"></column>
+		<column name="ImgName" db-name="imgname" type="String"></column>
+		<column name="TenCha" db-name="tencha" type="String"></column>
+		<column name="NgaySinhCha" db-name="ngaysinhcha" type="Date"></column>
+		<column name="TenMe" db-name="tenme" type="String"></column>
+		<column name="NgaySinhMe" db-name="ngaysinhme" type="Date"></column>
+		<column name="TenVo" db-name="tenvo" type="String"></column>
+		<column name="NgaySinhVo" db-name="ngaysinhvo" type="Date"></column>
+		<column name="Sdt" db-name="sdt" type="long"></column>
+	</entity>
+	
+	<entity local-service="true" name="Tinh" table="tinh" data-source="qlcongdanDataSource" remote-service="true">
+		<column name="Id" db-name="id" primary="true" type="long"></column>
+		<column name="Name" db-name="name" type="String"></column>
+		<column name="Type" db-name="type" type="String"></column>
+	</entity>
+	
+	<entity local-service="true" name="Huyen" table="huyen" data-source="qlcongdanDataSource" remote-service="true">
+		<column name="Id" db-name="id" primary="true" type="long"></column>
+		<column name="Name" db-name="name" type="String"></column>
+		<column name="Type" db-name="type" type="String"></column>
+		<column name="TinhId" db-name="tinhid" type="long"></column>
+	</entity>
+	
+	<entity local-service="true" name="Xa" table="xa" data-source="qlcongdanDataSource" remote-service="true">
+		<column name="Id" db-name="id" primary="true" type="long"></column>
+		<column name="Name" db-name="name" type="String"></column>
+		<column name="Type" db-name="type" type="String"></column>
+		<column name="HuyenId" db-name="huyenid" type="long"></column>
+	</entity>
+	
+	 <entity name="Photo" table="photo" local-service="true" remote-service="true" data-source="qlcongdanDataSource">
+        <column name="photoId" db-name="photoid" type="long" primary="true" ></column>
+        <column name="photoName" db-name="photoname" type="String" ></column>
+        <column name="owner" db-name="owner" type="long" ></column>
+        <column name="data" db-name="data" type="Blob" ></column>
+     </entity>
+</service-builder>

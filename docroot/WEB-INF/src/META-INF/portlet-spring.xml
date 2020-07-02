@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.congdan.service.CSMSCongDanLocalService" class="com.congdan.service.impl.CSMSCongDanLocalServiceImpl" />
+	<bean id="com.congdan.service.CSMSCongDanService" class="com.congdan.service.impl.CSMSCongDanServiceImpl" />
+	<bean id="com.congdan.service.persistence.CSMSCongDanPersistence" class="com.congdan.service.persistence.CSMSCongDanPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="qlcongdanDataSource" />
+	</bean>
+	<bean id="com.congdan.service.persistence.CSMSCongDanFinder" class="com.congdan.service.persistence.CSMSCongDanFinderImpl" parent="basePersistence">
+		<property name="dataSource" ref="qlcongdanDataSource" />
+	</bean>
+	<bean id="com.congdan.service.HuyenLocalService" class="com.congdan.service.impl.HuyenLocalServiceImpl" />
+	<bean id="com.congdan.service.HuyenService" class="com.congdan.service.impl.HuyenServiceImpl" />
+	<bean id="com.congdan.service.persistence.HuyenPersistence" class="com.congdan.service.persistence.HuyenPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="qlcongdanDataSource" />
+	</bean>
+	<bean id="com.congdan.service.PhotoLocalService" class="com.congdan.service.impl.PhotoLocalServiceImpl" />
+	<bean id="com.congdan.service.PhotoService" class="com.congdan.service.impl.PhotoServiceImpl" />
+	<bean id="com.congdan.service.persistence.PhotoPersistence" class="com.congdan.service.persistence.PhotoPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="qlcongdanDataSource" />
+	</bean>
+	<bean id="com.congdan.service.TinhLocalService" class="com.congdan.service.impl.TinhLocalServiceImpl" />
+	<bean id="com.congdan.service.TinhService" class="com.congdan.service.impl.TinhServiceImpl" />
+	<bean id="com.congdan.service.persistence.TinhPersistence" class="com.congdan.service.persistence.TinhPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="qlcongdanDataSource" />
+	</bean>
+	<bean id="com.congdan.service.XaLocalService" class="com.congdan.service.impl.XaLocalServiceImpl" />
+	<bean id="com.congdan.service.XaService" class="com.congdan.service.impl.XaServiceImpl" />
+	<bean id="com.congdan.service.persistence.XaPersistence" class="com.congdan.service.persistence.XaPersistenceImpl" parent="basePersistence">
+		<property name="dataSource" ref="qlcongdanDataSource" />
+	</bean>
+</beans>

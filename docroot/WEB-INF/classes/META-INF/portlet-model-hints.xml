@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.congdan.model.CSMSCongDan">
+		<field name="IdcsmsCongDan" type="long" />
+		<field name="Ho" type="String" />
+		<field name="Dem" type="String" />
+		<field name="Ten" type="String" />
+		<field name="NgaySinh" type="Date" />
+		<field name="GioiTinhId" type="long" />
+		<field name="NoiSinhChiTiet" type="String" />
+		<field name="NoiSinhXaId" type="long" />
+		<field name="NoiSinhHuyenId" type="long" />
+		<field name="NoiSinhTinhId" type="long" />
+		<field name="DanTocId" type="String" />
+		<field name="QuocTichId" type="String" />
+		<field name="TonGiaoId" type="String" />
+		<field name="DiaChiThuongTru" type="String" />
+		<field name="DiaChiThuongTruXaId" type="long" />
+		<field name="DiaChiThuongTruHuyenId" type="long" />
+		<field name="DiaChiThuongTruTinhId" type="long" />
+		<field name="DiaChiHienNay" type="String" />
+		<field name="DiaChiHienNayXaId" type="long" />
+		<field name="DiaChiHienNayHuyenId" type="long" />
+		<field name="DiaChiHienNayTinhId" type="long" />
+		<field name="TinhTrang" type="long" />
+		<field name="TinhtTranghonNhanId" type="long" />
+		<field name="socmnd" type="String" />
+		<field name="NgayCapCMND" type="Date" />
+		<field name="NoiCapCMND" type="String" />
+		<field name="SoHoKhau" type="String" />
+		<field name="LaChuHo" type="long" />
+		<field name="QuanHeChuHoId" type="long" />
+		<field name="SoHoChieu" type="String" />
+		<field name="NgayCapSHC" type="Date" />
+		<field name="NgayHetHanSHC" type="Date" />
+		<field name="NoiCapSHC" type="String" />
+		<field name="MaCongDan" type="long" />
+		<field name="ImageData" type="Blob" />
+		<field name="ImgName" type="String" />
+		<field name="TenCha" type="String" />
+		<field name="NgaySinhCha" type="Date" />
+		<field name="TenMe" type="String" />
+		<field name="NgaySinhMe" type="Date" />
+		<field name="TenVo" type="String" />
+		<field name="NgaySinhVo" type="Date" />
+		<field name="Sdt" type="long" />
+	</model>
+	<model name="com.congdan.model.Huyen">
+		<field name="Id" type="long" />
+		<field name="Name" type="String" />
+		<field name="Type" type="String" />
+		<field name="TinhId" type="long" />
+	</model>
+	<model name="com.congdan.model.Photo">
+		<field name="photoId" type="long" />
+		<field name="photoName" type="String" />
+		<field name="owner" type="long" />
+		<field name="data" type="Blob" />
+	</model>
+	<model name="com.congdan.model.Tinh">
+		<field name="Id" type="long" />
+		<field name="Name" type="String" />
+		<field name="Type" type="String" />
+	</model>
+	<model name="com.congdan.model.Xa">
+		<field name="Id" type="long" />
+		<field name="Name" type="String" />
+		<field name="Type" type="String" />
+		<field name="HuyenId" type="long" />
+	</model>
+</model-hints>

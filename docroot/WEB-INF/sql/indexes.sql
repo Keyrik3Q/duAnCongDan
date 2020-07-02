@@ -1,0 +1,1 @@
+create index IX_137981C7 on QuanLyCongDan_Foo (field2);

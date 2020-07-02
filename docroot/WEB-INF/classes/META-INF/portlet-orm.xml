@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.congdan.model.impl.CSMSCongDanModelImpl">
+		<attributes>
+			<id name="IdcsmsCongDan">
+				<column name="IDCSMSCONGDAN" />
+			</id>
+			<basic name="Ho">
+				<column name="HO" />
+			</basic>
+			<basic name="Dem">
+				<column name="DEM" />
+			</basic>
+			<basic name="Ten">
+				<column name="TEN" />
+			</basic>
+			<basic name="NgaySinh">
+				<column name="NGAYSINH" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="GioiTinhId">
+				<column name="GIOITINHID" />
+			</basic>
+			<basic name="NoiSinhChiTiet">
+				<column name="NOISINHCHITIET" />
+			</basic>
+			<basic name="NoiSinhXaId">
+				<column name="NOISINHXAID" />
+			</basic>
+			<basic name="NoiSinhHuyenId">
+				<column name="NOISINHHUYENID" />
+			</basic>
+			<basic name="NoiSinhTinhId">
+				<column name="NOISINHTINHID" />
+			</basic>
+			<basic name="DanTocId">
+				<column name="DANTOCID" />
+			</basic>
+			<basic name="QuocTichId">
+				<column name="QUOCTICHID" />
+			</basic>
+			<basic name="TonGiaoId">
+				<column name="TONGIAOID" />
+			</basic>
+			<basic name="DiaChiThuongTru">
+				<column name="DIACHITHUONGTRU" />
+			</basic>
+			<basic name="DiaChiThuongTruXaId">
+				<column name="DIACHITHUONGTRUXAID" />
+			</basic>
+			<basic name="DiaChiThuongTruHuyenId">
+				<column name="DIACHITHUONGTRUHUYENID" />
+			</basic>
+			<basic name="DiaChiThuongTruTinhId">
+				<column name="DIACHITHUONGTRUTINHID" />
+			</basic>
+			<basic name="DiaChiHienNay">
+				<column name="DIACHIHIENNAY" />
+			</basic>
+			<basic name="DiaChiHienNayXaId">
+				<column name="DIACHIHIENNAYXAID" />
+			</basic>
+			<basic name="DiaChiHienNayHuyenId">
+				<column name="DIACHIHIENNAYHUYENID" />
+			</basic>
+			<basic name="DiaChiHienNayTinhId">
+				<column name="DIACHIHIENNAYTINHID" />
+			</basic>
+			<basic name="TinhTrang">
+				<column name="TINHTRANG" />
+			</basic>
+			<basic name="TinhtTranghonNhanId">
+				<column name="TINHTRANGHONNHANID" />
+			</basic>
+			<basic name="socmnd" />
+			<basic name="NgayCapCMND">
+				<column name="NGAYCAPCMND" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="NoiCapCMND">
+				<column name="NOICAPCMND" />
+			</basic>
+			<basic name="SoHoKhau">
+				<column name="SOHOKHAU" />
+			</basic>
+			<basic name="LaChuHo">
+				<column name="LACHUHO" />
+			</basic>
+			<basic name="QuanHeChuHoId">
+				<column name="QUANHECHUHOID" />
+			</basic>
+			<basic name="SoHoChieu">
+				<column name="SOHOCHIEU" />
+			</basic>
+			<basic name="NgayCapSHC">
+				<column name="NGAYCAPSHC" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="NgayHetHanSHC">
+				<column name="NGAYHETHANSHC" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="NoiCapSHC">
+				<column name="NOICAPSHC" />
+			</basic>
+			<basic name="MaCongDan">
+				<column name="MACONGDAN" />
+			</basic>
+			<basic name="ImageData">
+				<column name="IMAGEDATA" />
+			</basic>
+			<basic name="ImgName">
+				<column name="IMGNAME" />
+			</basic>
+			<basic name="TenCha">
+				<column name="TENCHA" />
+			</basic>
+			<basic name="NgaySinhCha">
+				<column name="NGAYSINHCHA" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="TenMe">
+				<column name="TENME" />
+			</basic>
+			<basic name="NgaySinhMe">
+				<column name="NGAYSINHME" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="TenVo">
+				<column name="TENVO" />
+			</basic>
+			<basic name="NgaySinhVo">
+				<column name="NGAYSINHVO" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="Sdt">
+				<column name="SDT" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.congdan.model.impl.HuyenModelImpl">
+		<attributes>
+			<id name="Id">
+				<column name="ID" />
+			</id>
+			<basic name="Name">
+				<column name="NAME" />
+			</basic>
+			<basic name="Type">
+				<column name="TYPE" />
+			</basic>
+			<basic name="TinhId">
+				<column name="TINHID" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.congdan.model.impl.PhotoModelImpl">
+		<attributes>
+			<id name="photoId">
+				<column name="PHOTOID" />
+			</id>
+			<basic name="photoName">
+				<column name="PHOTONAME" />
+			</basic>
+			<basic name="owner" />
+			<basic name="data" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.congdan.model.impl.TinhModelImpl">
+		<attributes>
+			<id name="Id">
+				<column name="ID" />
+			</id>
+			<basic name="Name">
+				<column name="NAME" />
+			</basic>
+			<basic name="Type">
+				<column name="TYPE" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.congdan.model.impl.XaModelImpl">
+		<attributes>
+			<id name="Id">
+				<column name="ID" />
+			</id>
+			<basic name="Name">
+				<column name="NAME" />
+			</basic>
+			<basic name="Type">
+				<column name="TYPE" />
+			</basic>
+			<basic name="HuyenId">
+				<column name="HUYENID" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.congdan.model.impl.CSMSCongDanImpl" name="CSMSCongDan">
+		<table name="csmscongdan" />
+		<attributes />
+	</entity>
+	<entity class="com.congdan.model.impl.HuyenImpl" name="Huyen">
+		<table name="huyen" />
+		<attributes />
+	</entity>
+	<entity class="com.congdan.model.impl.PhotoImpl" name="Photo">
+		<table name="photo" />
+		<attributes />
+	</entity>
+	<entity class="com.congdan.model.impl.TinhImpl" name="Tinh">
+		<table name="tinh" />
+		<attributes />
+	</entity>
+	<entity class="com.congdan.model.impl.XaImpl" name="Xa">
+		<table name="xa" />
+		<attributes />
+	</entity>
+</entity-mappings>
